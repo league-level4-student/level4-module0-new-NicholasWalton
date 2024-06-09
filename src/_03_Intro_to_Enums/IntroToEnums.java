@@ -25,13 +25,12 @@ public class IntroToEnums {
 		// 2. Give the enum the following values:
 		// SOLID, LIQUID, GAS
 
-		// 3. Create an array of StatesOfMatter with all the values using .values().
+		// 3. Print out one value of StatesOfMatter.
 		// Hint: Use "StatesOfMatter." as if it were a static method.
 
-		// 4. Ask the user for a state of matter.
+		// 4. Print out all values of StatesOfMatter by iterating over StatesOfMatter.values().
 
-		// 5. Iterate through the array and find what the user entered.
-		// Hint: .name() or .toString
+		// 5. Ask the user for a state of matter. Find what the user entered using .valueOf().
 
 		// 6. Print outs its ordinal(order in the enum list)
 		// Hint: .ordinal()
