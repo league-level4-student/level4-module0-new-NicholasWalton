@@ -40,7 +40,6 @@ public class Location {
 	public void move(Direction currentDirection) {
 		this.x += currentDirection.xOffset;
 		this.y += currentDirection.yOffset;
-
 	}
 
 }

@@ -8,7 +8,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
-import java.util.Optional;
 import java.util.Random;
 
 import javax.swing.JFrame;
@@ -110,10 +109,6 @@ public class SnakeGame implements ActionListener, KeyListener {
 
 	@Override
 	public void keyPressed(KeyEvent e) {
-		Optional<Direction> newDirection = Direction.get(e.getKeyCode());
-		if(newDirection.isPresent()) {
-			snake.setDirection(newDirection.get());
-		}
 		/*
 		 * Use a switch statement to determine if an arrow key is pressed, and set the
 		 * snake's direction accordingly.
