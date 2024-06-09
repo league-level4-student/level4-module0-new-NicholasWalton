@@ -40,9 +40,9 @@ public class Snake {
 		Location newHeadLocation = head.getLocation();
 
 		/*
-		 * Use a switch statement to check on the currentDirection of the snake and
-		 * calculate the head's next x and y position. Depending on the direction, the
-		 * variables you created may increase or decrease by 1.
+		 * Use the currentDirection of the snake to calculate the head's next x and y position.
+		 * Hint: First, write a constructor Direction(int, int). Direction.x and Direction.y
+		 * should have values -1, 0, or 1.
 		 */
 		newHeadLocation.move(this.currentDirection);
 
