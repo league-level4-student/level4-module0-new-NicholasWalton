@@ -17,6 +17,10 @@ enum Elements {
 
 public class IntroToEnums {
 
+	public enum StatesOfMatter {
+		SOLID, LIQUID, GAS;
+	}
+
 	public static void main(String[] args) {
 
 		// 1. In your package explorer, create a new enum file called StatesOfMatter.
@@ -27,13 +31,20 @@ public class IntroToEnums {
 
 		// 3. Print out one value of StatesOfMatter.
 		// Hint: Use "StatesOfMatter." as if it were a static method.
+		System.out.println(StatesOfMatter.SOLID);
 
 		// 4. Print out all values of StatesOfMatter by iterating over StatesOfMatter.values().
+		for(StatesOfMatter state: StatesOfMatter.values()) {
+			System.out.println(state);
+		}
 
 		// 5. Ask the user for a state of matter. Find what the user entered using .valueOf().
+		String input = "LIQUID";
+		StatesOfMatter selected = StatesOfMatter.valueOf(input);
 
 		// 6. Print outs its ordinal(order in the enum list)
 		// Hint: .ordinal()
+		System.out.println(selected.ordinal());
 
 		// 7. Add a celsiusTemp member variable to StatesOfMatter.
 		// Note: Make sure to encapsulate it.
